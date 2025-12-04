@@ -74,7 +74,7 @@
         JOIN LIBROS L ON P.ID_Libro = L.ID_Libro
         WHERE P.FECHA_DEVOLUCION_REAL IS NULL;
     GO
-    
+    --Demostracion que funciona:
     SELECT * FROM LIBROS_PRESTADOS_ACTIVOS
     WHERE DIAS_PARA_VENCIMIENTO < 0;
 
@@ -99,4 +99,5 @@
     GO
 
     
+
 
